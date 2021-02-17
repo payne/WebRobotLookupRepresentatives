@@ -14,7 +14,6 @@ async function findDistrict(page, address) {
 }
 
 async function main() {
-  // const browser = await puppeteer.launch();
   console.log('launching...');
   const browser = await puppeteer.launch({headless:false}); // default is true
   const page = await browser.newPage();
